@@ -1,13 +1,28 @@
 package me.arkadiy.gumenniy.model;
 
 /**
- * Created by Arkadiy on 19.05.2016.
+ * Class for storing address
  */
 public class Address {
+    /**
+     * city index
+     */
     private String index;
+    /**
+     * city
+     */
     private String city;
+    /**
+     * street
+     */
     private String street;
+    /**
+     * house number on street
+     */
     private String house;
+    /**
+     * number of flat in house
+     */
     private String flat;
 
     public Address(String index, String city,
@@ -17,6 +32,24 @@ public class Address {
         this.street = street;
         this.house = house;
         this.flat = flat;
+    }
+
+    /**
+     * constructs full address string
+     *
+     * @return full address
+     */
+    public String getFullAddress() {
+        return String.format("%s, %s, %s, %s, %s", index, city, street, house, flat);
+    }
+
+    /**
+     * constructs short address string
+     *
+     * @return short address
+     */
+    public String getShortAddress() {
+        return String.format("%s, %s, %s", street, house, flat);
     }
 
     public String getIndex() {
@@ -57,13 +90,5 @@ public class Address {
 
     public void setFlat(String flat) {
         this.flat = flat;
-    }
-
-    public String fullAddress() {
-        return String.format("%s, %s, %s, %s, %s", index, city, street, house, flat);
-    }
-
-    public String shortAddress() {
-        return String.format("%s, %s, %s", street, house, flat);
     }
 }

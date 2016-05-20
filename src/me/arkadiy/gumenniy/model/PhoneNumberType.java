@@ -1,8 +1,15 @@
 package me.arkadiy.gumenniy.model;
 
 /**
- * Created by Arkadiy on 20.05.2016.
+ * offers different types of phone number
  */
 public enum PhoneNumberType {
-    HOME, MOBILE
+    /**
+     * home phone number
+     */
+    HOME,
+    /**
+     * mobile phone number
+     */
+    MOBILE
 }

@@ -1,12 +1,24 @@
 package me.arkadiy.gumenniy.model;
 
 /**
- * Created by Arkadiy on 20.05.2016.
+ * class which represents personal data
  */
 public class Person {
+    /**
+     * person's surname
+     */
     private String surname;
+    /**
+     * person's name
+     */
     private String name;
+    /**
+     * person's patronymic
+     */
     private String patronymic;
+    /**
+     * person's address
+     */
     private Address address;
 
     public Person(String surname, String name, String patronymic, Address address) {

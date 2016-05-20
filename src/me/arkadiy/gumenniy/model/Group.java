@@ -1,8 +1,21 @@
 package me.arkadiy.gumenniy.model;
 
 /**
- * Created by Arkadiy on 19.05.2016.
+ * Group of contact.
+ *
+ * @see Contact
  */
 public enum Group {
-    FAMILY, FRIENDS, OTHER
+    /**
+     * family type
+     */
+    FAMILY,
+    /**
+     * friends type
+     */
+    FRIENDS,
+    /**
+     * other type
+     */
+    OTHER
 }

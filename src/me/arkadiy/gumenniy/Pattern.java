@@ -1,7 +1,7 @@
 package me.arkadiy.gumenniy;
 
 /**
- * Created by Arkadiy on 20.05.2016.
+ * Interface that stores different regular expression patterns
  */
 public interface Pattern {
     String EMAIL = "/^([a-z0-9_\\.-]+)@([\\da-z\\.-]+)\\.([a-z\\.]{2,6})$/";

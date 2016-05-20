@@ -10,6 +10,7 @@ public class Console implements View {
 
     /**
      * prints message in console
+     *
      * @param message - printing message
      */
     @Override
@@ -19,6 +20,7 @@ public class Console implements View {
 
     /**
      * reads line from console
+     *
      * @return read line
      */
     @Override

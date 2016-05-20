@@ -6,12 +6,14 @@ package me.arkadiy.gumenniy.view;
 public interface View {
     /**
      * displays message
+     *
      * @param message displaying message
      */
     void print(String message);
 
     /**
      * reads user input
+     *
      * @return read string
      */
     String read();

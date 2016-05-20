@@ -3,15 +3,40 @@ package me.arkadiy.gumenniy.model;
 import java.util.HashMap;
 
 /**
- * Created by Arkadiy on 20.05.2016.
+ * Class that stores data about contact in notebook
+ *
+ * @see Notebook
  */
 public class Contact {
+    /**
+     * owner of contact info
+     */
     private Person person;
+    /**
+     * persons nickname
+     */
     private String nickname;
+    /**
+     * group of contact
+     */
     private Group group;
+    /**
+     * person's email
+     */
     private String mail;
+    /**
+     * person's skype
+     */
     private String skype;
+    /**
+     * contact comments
+     */
     private String comment;
+    /**
+     * map of phone numbers by types.
+     *
+     * @see PhoneNumberType
+     */
     private HashMap<PhoneNumberType, String> phoneNumbers;
 
 
@@ -26,6 +51,12 @@ public class Contact {
 
     }
 
+    /**
+     * adds phone number by appropriate phone number type
+     *
+     * @param type   - type of phone number
+     * @param number - phone number
+     */
     public void addPhoneNumber(PhoneNumberType type, String number) {
         phoneNumbers.put(type, number);
     }
